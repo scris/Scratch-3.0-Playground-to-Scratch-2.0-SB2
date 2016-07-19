@@ -1,7 +1,11 @@
 <center><h1>Scratch 3.0 Playground to Scratch 2.0 SB2</h1>
   Scratch 3.0: <input type="text" id="scratch30"><br>
-  <input type="submit" value="Submit"><br>
+  <input type="submit" value="Submit" onclick="p=xml2json(input.input)"><br>
   Output<br><br><textarea rows="4" cols="50">JSON output will be here</textarea>
 <br>
 </center>
 <script src="https://cdn.rawgit.com/enkidootech/xml2json/master/xml2json.min.js"></script>
+<script>
+  var p;
+  var input = document.getElementById("scratch30");
+</script>
