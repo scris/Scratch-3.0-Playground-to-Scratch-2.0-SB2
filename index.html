@@ -1,10 +1,17 @@
-<center><h1>Scratch 3.0 Playground to Scratch 2.0 SB2</h1>
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Scratch 3.0 Playground to Scratch 2.0 SB2</title>
+    </head>
+    <body>
+ <h1>Scratch 3.0 Playground to Scratch 2.0 SB2</h1>
   Scratch 3.0: <input type="text" id="scratch30"><br>
   <input type="submit" value="Submit" onclick="tojson();"><br>
   Output<br><br><textarea rows="4" cols="50">JSON output will be here</textarea>
 <br>
-</center>
-<script src="https://cdn.rawgit.com/enkidootech/xml2json/master/xml2json.min.js"></script>
+    <script src="https://cdn.rawgit.com/enkidootech/xml2json/master/xml2json.min.js"></script>
 <script>
   var p;
   var scratch3 = document.getElementById("scratch30");
@@ -12,3 +19,5 @@
     p=xml2json(scratch3.value);
   }
 </script>
+    </body>
+</html>
