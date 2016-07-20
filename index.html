@@ -13,10 +13,12 @@
 <br>
     <script src="https://cdn.rawgit.com/enkidootech/xml2json/master/xml2json.min.js"></script>
 <script>
-  var p;
+  var xmlData;
+  var sb3;
   var scratch3 = document.getElementById("scratch30");
   function tojson() {
-    p=xml2json(scratch3.value);
+    xmlData = scratch3.value;
+    sb3 = (new DOMParser).parseFromString(xmlData, 'text/xml');
   }
 </script>
     </body>
