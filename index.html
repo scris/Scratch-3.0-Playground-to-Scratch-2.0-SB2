@@ -13,13 +13,13 @@
 <br>
     <script src="https://cdn.rawgit.com/abdmob/x2js/master/xml2json.min.js"></script>
 <script>
+var x2js = new X2JS();
   var xmlData;
   var sb3;
-
   var scratch3 = document.getElementById("scratch30");
   function tojson() {
     xmlData = scratch3.value;
-    sb3 = (new DOMParser).parseFromString(xmlData, 'text/xml');
+    sb3 = x2js.xml_str2json(xmlData);
 
   
   }
